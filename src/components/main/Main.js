@@ -1,13 +1,13 @@
 import React from "react";
 import "../main/main.css";
 import TechStack from "./techStack/TechStack";
+import ContactForm from "./Form/ContectForm";
 export default function Main() {
   return (
     <>
       <div
         className=" container-fluid"
-        style={{ backgroundColor: "rgb(163, 230, 240)" }}
-      >
+        style={{ backgroundColor: "rgb(163, 230, 240)" }}>
         <div className="container">
           <div className="  row d-flex justify-content-center  align-items-center">
             <div className="col-md-6 -2">
@@ -20,16 +20,14 @@ export default function Main() {
               <div className="row">
                 <div
                   className="col text-primary "
-                  style={{ fontSize: "50px", fontWeight: "bold" }}
-                >
+                  style={{ fontSize: "50px", fontWeight: "bold" }}>
                   What You Think!
                 </div>
               </div>
               <div className="row">
                 <div
                   className="col"
-                  style={{ fontSize: "20px", fontWeight: "5px" }}
-                >
+                  style={{ fontSize: "20px", fontWeight: "5px" }}>
                   You'll find the most up-to-date programmers and technologies
                   to help you create the most innovative and cutting-edge
                   software solutions.
@@ -59,8 +57,7 @@ export default function Main() {
         <div className="row">
           <div
             className="count text-primary  "
-            style={{ fontSize: "50px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "50px", fontWeight: "bold" }}>
             150+
           </div>
           <div className="tag mx-3 ">Projects</div>
@@ -68,8 +65,7 @@ export default function Main() {
         <div className="row">
           <div
             className="count-clients text-primary  "
-            style={{ fontSize: "50px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "50px", fontWeight: "bold" }}>
             70+
           </div>
           <div className="tag mx-3">Clients</div>
@@ -77,8 +73,7 @@ export default function Main() {
         <div className="row">
           <div
             className="count-award   "
-            style={{ fontSize: "50px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "50px", fontWeight: "bold" }}>
             10+
           </div>
           <div className="tag mx-3">Awards</div>
@@ -86,8 +81,7 @@ export default function Main() {
         <div className="row">
           <div
             className="count-percent   "
-            style={{ fontSize: "50px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "50px", fontWeight: "bold" }}>
             100%
           </div>
           <div className="tag ">Satisfied Customers</div>
@@ -99,8 +93,7 @@ export default function Main() {
           <div className="col-md-6">
             <div
               className="text-md"
-              style={{ fontSize: "40px", fontWeight: "bold" }}
-            >
+              style={{ fontSize: "40px", fontWeight: "bold" }}>
               We Are{" "}
               <span className="text" style={{ color: "#b89126" }}>
                 Unique!
@@ -146,8 +139,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Experience The Most{" "}
             <span style={{ color: "#1ab9a3" }}>Customized</span> ERP
@@ -170,8 +162,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   {" "}
@@ -187,8 +178,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   Support
@@ -203,8 +193,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   Cost Control
@@ -222,8 +211,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card"
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   Powerful Dashboard
@@ -238,8 +226,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card"
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   Unique Feature
@@ -254,8 +241,7 @@ export default function Main() {
           <div className="col">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <h5 class="card-title" style={{ color: "#ba3991" }}>
                   Smart Notification
@@ -273,8 +259,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Modules</span>
           </div>
@@ -283,8 +268,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -295,8 +279,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Unlock The Endless Possibilities With{" "}
             <span style={{ color: "#1ab9a3" }}>GwayERP</span>
@@ -306,8 +289,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -326,8 +308,7 @@ export default function Main() {
         </div>
         <div
           className="d d-block"
-          style={{ marginTop: "280px", maxWidth: "100%" }}
-        >
+          style={{ marginTop: "280px", maxWidth: "100%" }}>
           <img
             className="d d-block"
             src="https://gwayerp.com/assets/images/visionback.webp"
@@ -338,18 +319,15 @@ export default function Main() {
       <div className="container position-relative ">
         <div
           className="row position-absolute  -2 "
-          style={{ top: "-200px", width: "100vw" }}
-        >
+          style={{ top: "-200px", width: "100vw" }}>
           <div
             className="col  -2 text-center text-white"
-            style={{ fontSize: "30px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "30px", fontWeight: "bold" }}>
             A company that was founded with a
           </div>
           <div
             className="text-center text-white "
-            style={{ fontSize: "50px", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "50px", fontWeight: "bold" }}>
             Global Vision In Mind.
           </div>
         </div>
@@ -358,8 +336,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Tech Stack</span>
           </div>
@@ -378,8 +355,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}> SDLC </span>Methodology
           </div>
@@ -388,8 +364,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center"
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             We prioritize providing solutions with zero downtime and ensuring
             that business operations run smoothly.
           </div>
@@ -400,21 +375,34 @@ export default function Main() {
         </div>
       </div>
       {/**************************8happy customers **********************************8*/}
-      <div className="container">
+
+      {/********************** contact form********************88*/}
+      <div className="container" id="form">
         <div className="row">
-          <div className="col">
-            <img
-              src="https://gwayerp.com/assets/images/revback.webp"
-              alt="logo"
-            />
+          <div className="col-md-6">
+            <div
+              className="row"
+              style={{
+                fontSize: "60px",
+                color: `rgb(26, 185, 163)`,
+                fontWeight: "bold",
+              }}>
+              We are all ears!
+            </div>
+            <div className="row text-xl mt-4">
+              Our friendly team would love to hear from you!
+            </div>
+            <div className="row mt-4">
+              <div className="col">
+                <hr />
+              </div>
+            </div>
+            <div className="row mt-2"> info@gwayerp.com</div>
+            <div className=" mt-2">+1 (979) 378-5363 /+1 (985) 316-5976</div>
+            <div className="mt-2">+1 (979) 378-5363 /+1 (985) 316-5976</div>
           </div>
-          <div className="col">
-            <div className="row">
-              <div className="col-sm ">happy customers</div>
-            </div>
-            <div className="row">
-              <div className="col">carasol</div>
-            </div>
+          <div className="col-md-6">
+            <ContactForm />
           </div>
         </div>
       </div>
