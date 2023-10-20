@@ -2,47 +2,80 @@ import React from "react";
 import "../main/main.css";
 import TechStack from "./techStack/TechStack";
 import ContactForm from "./Form/ContectForm";
+import TextRunner from "./textRunner/TextRunner";
 export default function Main() {
   return (
     <>
       <div
-        className=" container-fluid"
-        style={{ backgroundColor: "rgb(163, 230, 240)" }}>
+        className=" container-fluid mt-3"
+        style={{ backgroundColor: "rgb(204, 240, 245)" }}
+      >
         <div className="container">
-          <div className="  row d-flex justify-content-center  align-items-center">
-            <div className="col-md-6 -2">
+          <div className="  row d-flex  justify-content-between  align-items-center  border-3">
+            <div className="col-md-6 ">
               {" "}
               <div className="row">
-                <div className="col" style={{ fontSize: "30px" }}>
+                <div
+                  className="col "
+                  style={{
+                    fontSize: "40px",
+                    marginTop: "70px",
+                    opacity: "0.9",
+                  }}
+                >
                   We Produce
                 </div>
               </div>
-              <div className="row">
+              <div className="row" style={{ minWidth: "200px" }}>
                 <div
-                  className="col text-primary "
-                  style={{ fontSize: "50px", fontWeight: "bold" }}>
-                  What You Think!
+                  className="col  "
+                  style={{
+                    fontSize: "5vw",
+                    fontWeight: "bold",
+                    background:
+                      "linear-gradient(90deg, rgb(39, 227, 208), rgb(136, 216, 112))",
+                    webkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    color: "transparent",
+                  }}
+                >
+                  <TextRunner />
                 </div>
               </div>
-              <div className="row">
+              <div className="row mt-3">
                 <div
-                  className="col"
-                  style={{ fontSize: "20px", fontWeight: "5px" }}>
+                  className="col  "
+                  style={{
+                    fontSize: "23px",
+                    fontWeight: "400",
+                    color: "rgb(58, 59, 58)",
+                    opacity: "0.7",
+                  }}
+                >
                   You'll find the most up-to-date programmers and technologies
                   to help you create the most innovative and cutting-edge
                   software solutions.
                 </div>
               </div>
-              <div className="row mt-4">
-                <div className="col text-white ">
-                  <button className="btn btn-dark p-3 bg-dark text-white">
+              <div className="row mt-5">
+                <div className="col text-white  ">
+                  <button
+                    className="btn btn-dark   bg-dark text-white"
+                    style={{
+                      padding: "15px",
+                      paddingLeft: "40px",
+                      paddingRight: "40px",
+
+                      fontSize: "20px",
+                    }}
+                  >
                     {" "}
                     Book Your Consultation
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-6 ">
+            <div className="col-md-6 pt-5">
               <img
                 src="https://gwayerp.com/assets/images/heroimage.webp"
                 alt="imag"
@@ -53,78 +86,103 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="container d-flex justify-content-around   mt-4 mb-4">
+      {/* awards and acievements """""""""""""""""""""""""""""""""""""""""""""""""*/}
+      <div className="container " style={{ marginTop: "170px" }}>
         <div className="row">
-          <div
-            className="count text-primary  "
-            style={{ fontSize: "50px", fontWeight: "bold" }}>
-            150+
+          <div className="col-md-3 col-sm-6">
+            <div
+              className="count  text-center "
+              style={{
+                fontSize: "60px",
+                fontWeight: "bold",
+                color: "rgb(11, 208, 242)",
+              }}
+            >
+              150+
+            </div>
+            <div className="tag  text-center border border-1  ">Projects</div>
           </div>
-          <div className="tag mx-3 ">Projects</div>
-        </div>
-        <div className="row">
-          <div
-            className="count-clients text-primary  "
-            style={{ fontSize: "50px", fontWeight: "bold" }}>
-            70+
+          <div className="col-md-3 col-sm-6">
+            <div
+              className="count-clients  text-center "
+              style={{
+                fontSize: "60px",
+                fontWeight: "bold",
+                color: "rgb(63, 194, 203)",
+              }}
+            >
+              70+
+            </div>
+            <div className="tag  text-center ">Clients</div>
           </div>
-          <div className="tag mx-3">Clients</div>
-        </div>
-        <div className="row">
-          <div
-            className="count-award   "
-            style={{ fontSize: "50px", fontWeight: "bold" }}>
-            10+
+          <div className="col-md-3 col-sm-6">
+            {" "}
+            <div
+              className="count-award text-center  "
+              style={{
+                fontSize: "60px",
+                fontWeight: "bold",
+                color: "lightgreen",
+              }}
+            >
+              10+
+            </div>
+            <div className="tag  text-center">Awards</div>
           </div>
-          <div className="tag mx-3">Awards</div>
-        </div>
-        <div className="row">
-          <div
-            className="count-percent   "
-            style={{ fontSize: "50px", fontWeight: "bold" }}>
-            100%
+          <div className="col-md-3 col-sm-6">
+            <div
+              className="count-percent text-center  "
+              style={{ fontSize: "60px", fontWeight: "bold" }}
+            >
+              100%
+            </div>
+            <div className="tag text-center ">Satisfied Customers</div>
           </div>
-          <div className="tag ">Satisfied Customers</div>
         </div>
       </div>
-      {/*PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPp*/}
-      <div className="container  " style={{ marginTop: "150px" }}>
+
+      {/*PPPPPP  we arer unique  PPPPPPPPPPPPPPPPPPPPPPPPp*/}
+      <div className="container " style={{ marginTop: "200px" }}>
         <div className="row d-flex d-flex justify-content-between">
           <div className="col-md-6">
             <div
               className="text-md"
-              style={{ fontSize: "40px", fontWeight: "bold" }}>
+              style={{ fontSize: "50px", fontWeight: "bold" }}
+            >
               We Are{" "}
-              <span className="text" style={{ color: "#b89126" }}>
+              <span
+                className="text"
+                style={{ color: "#b89126", opacity: "0.8" }}
+              >
                 Unique!
               </span>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               Since 2014, we are a leading software provider with futuristic
               business analytics.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               We prioritize delivering cutting-edge technology combined with
               design brilliance by putting the customer's needs first.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               We focus on every aspect of your long-term success over short-term
               business goals.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               We assist in streamlining and organizing a variety of business
               processes to achieve maximum profitability and client
               satisfaction.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               We offer high-quality software development services that will help
               your business grow.
             </div>
-            <div className="mt-4">
+            <div className="mt-4 textsUnique">
               Get the best outsourcing solutions from our team of experts now
             </div>
           </div>
-          <div className="col  -4 d-flex justify-content-end">
+          <div className="col  -4 d-flex justify-content-end align-items-center">
             <img
               src="https://gwayerp.com/assets/images/uni.webp"
               alt=""
@@ -139,7 +197,8 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}>
+          style={{ fontSize: "40px", fontWeight: "bold" }}
+        >
           <div>
             Experience The Most{" "}
             <span style={{ color: "#1ab9a3" }}>Customized</span> ERP
@@ -158,99 +217,144 @@ export default function Main() {
       {/*******************card impementation*************************/}
 
       <div className="container shadow cards " style={{ marginTop: "100px" }}>
-        <div className="row mt-4 pt-4 ">
-          <div className="col">
+        <div className="row  pt-4 ">
+          <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
+              style={{
+                backgroundColor: "rgb(250, 220, 248)",
+                minHeight: "150px",
+              }}
+            >
               <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  {" "}
-                  <i class="bi bi-tattoo"></i>User Friendly
-                </h5>
-                <p class="card-text">
-                  Our application is easy to access and retrieve the data, with
-                  more pictorial representations and reports
-                </p>
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      User Friendly
+                    </h5>
+                    <p class="card-text ">
+                      Our application is easy to access and retrieve the data,
+                      with more pictorial representations and reports.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
+              style={{
+                backgroundColor: "rgb(219, 245, 250)",
+                minHeight: "150px",
+              }}
+            >
               <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  Support
-                </h5>
-                <p class="card-text">
-                  We offer 24/7 support to rectify the issues you faced for
-                  healthy business outcomes without any interruptions.
-                </p>
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      Support
+                    </h5>
+                    <p class="card-text ">
+                      We offer 24/7 support to rectify the issues you faced for
+                      healthy business outcomes without any interruptions
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
+              style={{
+                backgroundColor: "rgb(178, 224, 201)",
+                minHeight: "150px",
+              }}
+            >
               <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  Cost Control
-                </h5>
-                <p class="card-text">
-                  To excel in the market, along with quality, cost optimization
-                  is preferred. We balance the product with the cost, which is
-                  more effective to sustain.
-                </p>
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      Cost Control
+                    </h5>
+                    <p class="card-text ">
+                      To excel in the market, along with quality, cost
+                      optimization is preferred. We balance the product with the
+                      cost, which is more effective to sustain.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="row mt-4 pb-4">
-          <div className="col">
-            <div
-              class="card"
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
-              <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  Powerful Dashboard
-                </h5>
-                <p class="card-text">
-                  Our customized dashboard illustrates the vital information
-                  that users prefer to showcase to customers.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div
-              class="card"
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
-              <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  Unique Feature
-                </h5>
-                <p class="card-text">
-                  Detailed analysis of the requirements and making a dedicated
-                  application for the user to access with ease.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col">
+        <div className="row  pb-4">
+          <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
+            >
               <div class="card-body">
-                <h5 class="card-title" style={{ color: "#ba3991" }}>
-                  Smart Notification
-                </h5>
-                <p class="card-text text-center">
-                  We offer an alert management system in the payment and stock
-                  areas to avoid the last-minute rush, as we value the
-                  customer's needs.
-                </p>
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      Powerful Dashboard
+                    </h5>
+                    <p class="card-text ">
+                      We offer an alert management system in the payment and
+                      stock areas to avoid the last-minute rush, as we value the
+                      customer's needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mt-2">
+            <div
+              class="card "
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
+            >
+              <div class="card-body">
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      Unique Feature
+                    </h5>
+                    <p class="card-text ">
+                      Detailed analysis of the requirements and making a
+                      dedicated application for the user to access with ease
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mt-2">
+            <div
+              class="card "
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
+            >
+              <div class="card-body">
+                <div className=" d-flex justify-content-between">
+                  <div className="-">icon</div>
+                  <div className="">
+                    <h5 class="card-title" style={{ color: "#ba3991" }}>
+                      Smart Notification
+                    </h5>
+                    <p class="card-text ">
+                      We offer an alert management system in the payment and
+                      stock areas to avoid the last-minute rush, as we value the
+                      customer's needs.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -259,7 +363,8 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}>
+          style={{ fontSize: "40px", fontWeight: "bold" }}
+        >
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Modules</span>
           </div>
@@ -268,7 +373,8 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}>
+            style={{ fontSize: "20px" }}
+          >
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -279,7 +385,8 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}>
+          style={{ fontSize: "40px", fontWeight: "bold" }}
+        >
           <div>
             Unlock The Endless Possibilities With{" "}
             <span style={{ color: "#1ab9a3" }}>GwayERP</span>
@@ -289,7 +396,8 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}>
+            style={{ fontSize: "20px" }}
+          >
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -299,44 +407,66 @@ export default function Main() {
       </div>
 
       {/*video***************************************************8*/}
-      <div className="container-fluid d-flex justify-content-center align-items-center mt-5  position-relative  -1 ">
-        <div className="" style={{ position: "absolute", top: "100px" }}>
-          <video width="940" height="460" controls>
-            <source src="https://youtu.be/_LHptKGiuM" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+
+      {/*again background and image*/}
+
+      <div
+        className="container-fluid"
+        style={{
+          backgroundImage:
+            "url('https://gwayerp.com/assets/images/visionback.webp')",
+          height: "600px",
+          marginTop: "400px",
+          fontSize: "50px",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="videoContainer position-relative ">
+          <div className="row  ">
+            <div
+              className=""
+              style={{
+                position: "absolute",
+                left: "50%",
+                transform: "translateX(-33%)",
+                top: "-280px",
+              }}
+            >
+              <video width="450" height="460" controls>
+                <source src="https://youtu.be/_LHptKGiuM" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
-        <div
-          className="d d-block"
-          style={{ marginTop: "280px", maxWidth: "100%" }}>
-          <img
-            className="d d-block"
-            src="https://gwayerp.com/assets/images/visionback.webp"
-            alt=""
-          />
+        <div className="textContainer position-relative">
+          <div
+            className="row position-absolute  "
+            style={{ top: "350px", width: "100vw" }}
+          >
+            <div
+              className="col  -2 text-center text-white"
+              style={{ fontSize: "30px", fontWeight: "bold" }}
+            >
+              A company that was founded with a
+            </div>
+            <div
+              className="text-center text-white "
+              style={{ fontSize: "75px", fontWeight: "bold" }}
+            >
+              Global Vision In Mind.
+            </div>
+          </div>
         </div>
       </div>
-      <div className="container position-relative ">
-        <div
-          className="row position-absolute  -2 "
-          style={{ top: "-200px", width: "100vw" }}>
-          <div
-            className="col  -2 text-center text-white"
-            style={{ fontSize: "30px", fontWeight: "bold" }}>
-            A company that was founded with a
-          </div>
-          <div
-            className="text-center text-white "
-            style={{ fontSize: "50px", fontWeight: "bold" }}>
-            Global Vision In Mind.
-          </div>
-        </div>
-      </div>
+
       {/****************************tech stack*********************** */}
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}>
+          style={{ fontSize: "40px", fontWeight: "bold" }}
+        >
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Tech Stack</span>
           </div>
@@ -355,7 +485,8 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}>
+          style={{ fontSize: "40px", fontWeight: "bold" }}
+        >
           <div>
             Our <span style={{ color: "#1ab9a3" }}> SDLC </span>Methodology
           </div>
@@ -364,7 +495,8 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center"
-            style={{ fontSize: "20px" }}>
+            style={{ fontSize: "20px" }}
+          >
             We prioritize providing solutions with zero downtime and ensuring
             that business operations run smoothly.
           </div>
@@ -386,7 +518,8 @@ export default function Main() {
                 fontSize: "60px",
                 color: `rgb(26, 185, 163)`,
                 fontWeight: "bold",
-              }}>
+              }}
+            >
               We are all ears!
             </div>
             <div className="row text-xl mt-4">

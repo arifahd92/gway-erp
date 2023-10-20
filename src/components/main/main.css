@@ -3,5 +3,24 @@
 }
 .count-award{
     color:rgb(111, 221, 129)
-    color(srgb rgb(163, 230, 240) green blue)
+    color(srgb rgb(204, 240, 245) rgb(136, 216, 112)
+     rgb(39, 227, 208))
+}
+.plate1{
+    color:aliceblue
+}
+.plate2{
+    color:rgb(63, 194, 203)
+}
+.plate3{
+    color:aliceblue
+}
+.tag{
+    font-size: x-large;
+    opacity: 0.5;
+}
+
+.textsUnique{
+    font-size: x-large;
+    opacity: 0.9;
 }

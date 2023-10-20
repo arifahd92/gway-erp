@@ -1,13 +1,22 @@
-import axios from "axios";
 import React, { useState } from "react";
+import {
+  Button,
+  TextField,
+  Container,
+  Grid,
+  Box,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
+    landline: "",
     phone: "",
-    message: "",
+    comments: "",
+    org_name: "",
   });
 
   const handleInputChange = (e) => {
@@ -21,85 +30,91 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const api = "https://gwayerp.com/contact";
+      console.log(formData);
+      const api = "https://api.greenwayitsolutions.com/enquirydb/new";
       const response = await axios.post(api, formData);
 
-      console.log(response.data);
-      alert(`thanks for contacting we will be back soon`);
+      console.log(response);
+      alert(`Thanks for contacting! We will be back soon.`);
     } catch (error) {
       alert(error.message);
     }
-
-    console.log("Form Data Submitted:", formData);
   };
 
   return (
-    <div>
+    <Container maxWidth="sm">
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            className="form-control"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            placeholder="Enter your name"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            placeholder="Enter your email"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="mobile">Mobile:</label>
-          <input
-            type="tel"
-            className="form-control"
-            id="mobile"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleInputChange}
-            placeholder="Enter your mobile number"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="phone">Phone:</label>
-          <input
-            type="tel"
-            className="form-control"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
-            placeholder="Enter your phone number"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            className="form-control"
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            placeholder="Enter your message"
-          />
-        </div>
-        <button type="submit" className="btn btn-dark btn-block">
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              placeholder="Enter your name"
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Email"
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="Enter your email"
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Mobile"
+              name="landline"
+              type="tel"
+              value={formData.landline}
+              onChange={handleInputChange}
+              placeholder="Enter your mobile number"
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Phone"
+              name="phone"
+              type="tel"
+              value={formData.phone}
+              onChange={handleInputChange}
+              placeholder="Enter your phone number"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <Box display="flex" flexDirection="column">
+              <Typography variant="subtitle1">Message</Typography>
+              <textarea
+                className="scrollable-textarea"
+                name="comments"
+                value={formData.comments}
+                onChange={handleInputChange}
+                placeholder="Enter your message"
+              />
+            </Box>
+          </Grid>
+        </Grid>
+        <Button
+          style={{ backGroundColor: "black" }}
+          type="submit"
+          variant="contained"
+          fullWidth
+          m={2}
+        >
           Submit
-        </button>
+        </Button>
       </form>
-    </div>
+    </Container>
   );
 }
 

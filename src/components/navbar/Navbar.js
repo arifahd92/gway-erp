@@ -4,7 +4,7 @@ import Model from "./Model";
 function navbargway() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="positi">
+      <Navbar collapseOnSelect expand="lg" className="">
         <Container>
           <Navbar.Brand href="#">
             <img
@@ -20,14 +20,21 @@ function navbargway() {
               <Nav.Link href="#features">
                 <Model />{" "}
               </Nav.Link>
-              <Nav.Link href="#pricing">Company </Nav.Link>
+              <Nav.Link href="#pricing text-center">Company </Nav.Link>
               <Nav.Link href="#features">Services</Nav.Link>
               <Nav.Link href="#form">Contact Us </Nav.Link>
             </Nav>
             <Nav>
               <button
-                className="btn btn-secondary text-white p-3"
-                style={{ color: "#fff" }}>
+                className="btn  text-white "
+                style={{
+                  color: "#fff",
+                  background:
+                    "linear-gradient(90deg, rgb(39, 227, 208), rgb(136, 216, 112))",
+                  fontSize: "25px",
+                  padding: "10px",
+                }}
+              >
                 Free Consultation
               </button>
             </Nav>
