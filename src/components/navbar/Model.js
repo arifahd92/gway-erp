@@ -16,8 +16,12 @@ function MyComponent() {
         onHide={handleClose}
         style={{ position: "absolute", left: "-300px", top: "50px" }}>
         <div
-          className="modal-content"
-          style={{ width: "60vw", minHeight: "400px" }}>
+          className="modal-content   "
+          style={{
+            width: "70vw",
+            minHeight: "400px",
+            border: "5px solid red",
+          }}>
           <Modal.Body>
             <div className="container">
               <div className="row">

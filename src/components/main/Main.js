@@ -8,8 +8,10 @@ export default function Main() {
     <>
       <div
         className=" container-fluid mt-3"
-        style={{ backgroundColor: "rgb(204, 240, 245)" }}
-      >
+        style={{
+          backgroundColor: ")",
+          backgroundImage: "url(https://gwayerp.com/assets/images/grad1.webp)",
+        }}>
         <div className="container">
           <div className="  row d-flex  justify-content-between  align-items-center  border-3">
             <div className="col-md-6 ">
@@ -21,8 +23,7 @@ export default function Main() {
                     fontSize: "40px",
                     marginTop: "70px",
                     opacity: "0.9",
-                  }}
-                >
+                  }}>
                   We Produce
                 </div>
               </div>
@@ -37,8 +38,7 @@ export default function Main() {
                     webkitBackgroundClip: "text",
                     backgroundClip: "text",
                     color: "transparent",
-                  }}
-                >
+                  }}>
                   <TextRunner />
                 </div>
               </div>
@@ -50,8 +50,7 @@ export default function Main() {
                     fontWeight: "400",
                     color: "rgb(58, 59, 58)",
                     opacity: "0.7",
-                  }}
-                >
+                  }}>
                   You'll find the most up-to-date programmers and technologies
                   to help you create the most innovative and cutting-edge
                   software solutions.
@@ -67,16 +66,16 @@ export default function Main() {
                       paddingRight: "40px",
 
                       fontSize: "20px",
-                    }}
-                  >
+                    }}>
                     {" "}
                     Book Your Consultation
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 pt-5">
+            <div className="col-md-6 text-center border border-success pt-5 d-flex justify-content-center  align-items-center ">
               <img
+                className="border border-danger"
                 src="https://gwayerp.com/assets/images/heroimage.webp"
                 alt="imag"
                 style={{ height: "80vh", width: "50vw" }}
@@ -93,11 +92,10 @@ export default function Main() {
             <div
               className="count  text-center "
               style={{
-                fontSize: "60px",
-                fontWeight: "bold",
-                color: "rgb(11, 208, 242)",
-              }}
-            >
+                fontSize: "50px",
+                fontWeight: "600",
+                color: "#08cbf5",
+              }}>
               150+
             </div>
             <div className="tag  text-center border border-1  ">Projects</div>
@@ -106,11 +104,10 @@ export default function Main() {
             <div
               className="count-clients  text-center "
               style={{
-                fontSize: "60px",
-                fontWeight: "bold",
-                color: "rgb(63, 194, 203)",
-              }}
-            >
+                fontSize: "50px",
+                fontWeight: "600",
+                color: "#34d8d1",
+              }}>
               70+
             </div>
             <div className="tag  text-center ">Clients</div>
@@ -120,11 +117,10 @@ export default function Main() {
             <div
               className="count-award text-center  "
               style={{
-                fontSize: "60px",
-                fontWeight: "bold",
-                color: "lightgreen",
-              }}
-            >
+                fontSize: "50px",
+                fontWeight: "600",
+                color: "rgb(95, 228, 170)",
+              }}>
               10+
             </div>
             <div className="tag  text-center">Awards</div>
@@ -132,8 +128,11 @@ export default function Main() {
           <div className="col-md-3 col-sm-6">
             <div
               className="count-percent text-center  "
-              style={{ fontSize: "60px", fontWeight: "bold" }}
-            >
+              style={{
+                fontSize: "50px",
+                fontWeight: "600",
+                color: "rgb(127, 237, 143)",
+              }}>
               100%
             </div>
             <div className="tag text-center ">Satisfied Customers</div>
@@ -142,53 +141,65 @@ export default function Main() {
       </div>
 
       {/*PPPPPP  we arer unique  PPPPPPPPPPPPPPPPPPPPPPPPp*/}
-      <div className="container " style={{ marginTop: "200px" }}>
-        <div className="row d-flex d-flex justify-content-between">
-          <div className="col-md-6">
+      <div className="container d-flex " style={{ marginTop: "200px" }}>
+        <div className="row  d-flex justify-content-between">
+          <div className="col-md-6 " style={{ height: "fit-content" }}>
             <div
               className="text-md"
-              style={{ fontSize: "50px", fontWeight: "bold" }}
-            >
+              style={{ fontSize: "40px", fontWeight: "700" }}>
               We Are{" "}
               <span
                 className="text"
-                style={{ color: "#b89126", opacity: "0.8" }}
-              >
+                style={{ color: "rgb(206, 170, 88)", opacity: "0.8" }}>
                 Unique!
               </span>
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="mt-4 textsUnique"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               Since 2014, we are a leading software provider with futuristic
               business analytics.
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="2 textsUnique mt-3"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               We prioritize delivering cutting-edge technology combined with
               design brilliance by putting the customer's needs first.
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="2 textsUnique mt-3"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               We focus on every aspect of your long-term success over short-term
               business goals.
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="2 textsUnique mt-3"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               We assist in streamlining and organizing a variety of business
               processes to achieve maximum profitability and client
               satisfaction.
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="2 textsUnique mt-3"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               We offer high-quality software development services that will help
               your business grow.
             </div>
-            <div className="mt-4 textsUnique">
+            <div
+              className="2 textsUnique mt-3"
+              style={{ fontSize: "20px", fontWeight: "400" }}>
               Get the best outsourcing solutions from our team of experts now
             </div>
           </div>
-          <div className="col  -4 d-flex justify-content-end align-items-center">
+          <div
+            className="col-md-6 d-flex align-items-center justify-content-center"
+            style={{ height: "500px" }}>
             <img
               src="https://gwayerp.com/assets/images/uni.webp"
               alt=""
               srcSet=""
-              height={"450px"}
               width={"80%"}
+              style={{ maxHeight: "100%" }}
             />
           </div>
         </div>
@@ -197,8 +208,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Experience The Most{" "}
             <span style={{ color: "#1ab9a3" }}>Customized</span> ERP
@@ -224,8 +234,7 @@ export default function Main() {
               style={{
                 backgroundColor: "rgb(250, 220, 248)",
                 minHeight: "150px",
-              }}
-            >
+              }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -248,8 +257,7 @@ export default function Main() {
               style={{
                 backgroundColor: "rgb(219, 245, 250)",
                 minHeight: "150px",
-              }}
-            >
+              }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -272,8 +280,7 @@ export default function Main() {
               style={{
                 backgroundColor: "rgb(178, 224, 201)",
                 minHeight: "150px",
-              }}
-            >
+              }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -296,8 +303,7 @@ export default function Main() {
           <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -318,8 +324,7 @@ export default function Main() {
           <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -339,8 +344,7 @@ export default function Main() {
           <div className="col-md-4 mt-2">
             <div
               class="card "
-              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}
-            >
+              style={{ backgroundColor: "#e7ccde", minHeight: "150px" }}>
               <div class="card-body">
                 <div className=" d-flex justify-content-between">
                   <div className="-">icon</div>
@@ -363,8 +367,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Modules</span>
           </div>
@@ -373,8 +376,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -385,8 +387,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Unlock The Endless Possibilities With{" "}
             <span style={{ color: "#1ab9a3" }}>GwayERP</span>
@@ -396,8 +397,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center align-items-center "
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             GwayERP is a custom software development organization that aims to
             provide customized functionality that meets a company's specific
             operational and strategic requirements.
@@ -420,8 +420,7 @@ export default function Main() {
           fontSize: "50px",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-        }}
-      >
+        }}>
         <div className="videoContainer position-relative ">
           <div className="row  ">
             <div
@@ -431,9 +430,8 @@ export default function Main() {
                 left: "50%",
                 transform: "translateX(-33%)",
                 top: "-280px",
-              }}
-            >
-              <video width="450" height="460" controls>
+              }}>
+              <video controls>
                 <source src="https://youtu.be/_LHptKGiuM" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -443,18 +441,15 @@ export default function Main() {
         <div className="textContainer position-relative">
           <div
             className="row position-absolute  "
-            style={{ top: "350px", width: "100vw" }}
-          >
+            style={{ top: "350px", width: "100vw" }}>
             <div
               className="col  -2 text-center text-white"
-              style={{ fontSize: "30px", fontWeight: "bold" }}
-            >
+              style={{ fontSize: "30px", fontWeight: "bold" }}>
               A company that was founded with a
             </div>
             <div
               className="text-center text-white "
-              style={{ fontSize: "75px", fontWeight: "bold" }}
-            >
+              style={{ fontSize: "75px", fontWeight: "bold" }}>
               Global Vision In Mind.
             </div>
           </div>
@@ -465,8 +460,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}>Tech Stack</span>
           </div>
@@ -485,8 +479,7 @@ export default function Main() {
       <div className="container" style={{ marginTop: "150px" }}>
         <div
           className="row text-center "
-          style={{ fontSize: "40px", fontWeight: "bold" }}
-        >
+          style={{ fontSize: "40px", fontWeight: "bold" }}>
           <div>
             Our <span style={{ color: "#1ab9a3" }}> SDLC </span>Methodology
           </div>
@@ -495,8 +488,7 @@ export default function Main() {
           <div className="col-3"></div>
           <div
             className="col-6 d-flex justify-content-center text-center"
-            style={{ fontSize: "20px" }}
-          >
+            style={{ fontSize: "20px" }}>
             We prioritize providing solutions with zero downtime and ensuring
             that business operations run smoothly.
           </div>
@@ -518,8 +510,7 @@ export default function Main() {
                 fontSize: "60px",
                 color: `rgb(26, 185, 163)`,
                 fontWeight: "bold",
-              }}
-            >
+              }}>
               We are all ears!
             </div>
             <div className="row text-xl mt-4">
