@@ -7,13 +7,13 @@
      rgb(39, 227, 208))
 }
 .plate1{
-    color:aliceblue
+    color:rgb(250, 220, 248)
 }
 .plate2{
-    color:rgb(63, 194, 203)
+    color:rgb(219, 245, 250)
 }
 .plate3{
-    color:aliceblue
+    color:rgb(178, 224, 201)
 }
 .tag{
     font-size: x-large;
@@ -24,3 +24,30 @@
     font-size: x-large;
     opacity: 0.9;
 }
+
+.heroImageContainer{
+
+
+  
+    max-height: 400px;
+}
+.heroImage{
+    display: block;
+    height: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  
+    .produce{
+        display: flex;
+        justify-content: center;
+        color:"red"
+    }
+    .heroImageContainer{
+     height: "50vh";
+
+    }
+
+  }

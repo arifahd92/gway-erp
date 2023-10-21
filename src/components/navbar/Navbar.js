@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import Model from "./Model";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import MyModal from "./Mymodal";
 function navbargway() {
   return (
     <>
@@ -18,10 +18,16 @@ function navbargway() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#features">
-                <Model />{" "}
+                <MyModal navItem="Product" />{" "}
               </Nav.Link>
-              <Nav.Link href="#pricing text-center">Company </Nav.Link>
-              <Nav.Link href="#features">Services</Nav.Link>
+              <Nav.Link href="#pricing text-center">
+                {" "}
+                <MyModal navItem="Company" />{" "}
+              </Nav.Link>
+              <Nav.Link href="#features">
+                {" "}
+                <MyModal navItem="Services" />{" "}
+              </Nav.Link>
               <Nav.Link href="#form">Contact Us </Nav.Link>
             </Nav>
             <Nav>

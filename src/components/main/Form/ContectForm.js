@@ -6,6 +6,7 @@ import {
   Grid,
   Box,
   Typography,
+  Alert,
 } from "@mui/material";
 import axios from "axios";
 
@@ -18,7 +19,7 @@ function ContactForm() {
     comments: "",
     org_name: "",
   });
-
+  const [request, setRequest] = useState(false);
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -31,90 +32,98 @@ function ContactForm() {
     e.preventDefault();
     try {
       console.log(formData);
+      setRequest(true);
       const api = "https://api.greenwayitsolutions.com/enquirydb/new";
       const response = await axios.post(api, formData);
 
       console.log(response);
       alert(`Thanks for contacting! We will be back soon.`);
+      setRequest(false);
     } catch (error) {
       alert(error.message);
+      setRequest(false);
     }
   };
 
   return (
-    <Container maxWidth="sm">
-      <form onSubmit={handleSubmit}>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <TextField
-              fullWidth
-              label="Name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              placeholder="Enter your name"
-              required
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              fullWidth
-              label="Email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              placeholder="Enter your email"
-              required
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              fullWidth
-              label="Mobile"
-              name="landline"
-              type="tel"
-              value={formData.landline}
-              onChange={handleInputChange}
-              placeholder="Enter your mobile number"
-              required
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              fullWidth
-              label="Phone"
-              name="phone"
-              type="tel"
-              value={formData.phone}
-              onChange={handleInputChange}
-              placeholder="Enter your phone number"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <Box display="flex" flexDirection="column">
-              <Typography variant="subtitle1">Message</Typography>
-              <textarea
-                className="scrollable-textarea"
-                name="comments"
-                value={formData.comments}
+    <div className="container">
+      {request && <Alert severity="warning">Please wait...</Alert>}
+      <Container maxWidth="sm" className="mt-3">
+        <form onSubmit={handleSubmit}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <TextField
+                fullWidth
+                label="Name"
+                name="name"
+                value={formData.name}
                 onChange={handleInputChange}
-                placeholder="Enter your message"
+                placeholder="Enter your name"
+                required
               />
-            </Box>
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                fullWidth
+                label="Email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Enter your email"
+                required
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                fullWidth
+                label="Mobile"
+                name="landline"
+                type="tel"
+                value={formData.landline}
+                onChange={handleInputChange}
+                placeholder="Enter your mobile number"
+                required
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                fullWidth
+                label="Phone"
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="Enter your phone number"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <Box display="flex" flexDirection="column">
+                <Typography variant="subtitle1">Message</Typography>
+                <textarea
+                  className="scrollable-textarea"
+                  name="comments"
+                  value={formData.comments}
+                  onChange={handleInputChange}
+                  placeholder="Enter your message"
+                />
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
-        <Button
-          style={{ backGroundColor: "black" }}
-          type="submit"
-          variant="contained"
-          fullWidth
-          m={2}
-        >
-          Submit
-        </Button>
-      </form>
-    </Container>
+          <Button
+            className="mt-3 p-3"
+            style={{ backgroundColor: "rgb(2, 22, 19)" }}
+            type="submit"
+            variant="contained"
+            disabled={request}
+            fullWidth
+            m={2}
+          >
+            Submit
+          </Button>
+        </form>
+      </Container>
+    </div>
   );
 }
 
